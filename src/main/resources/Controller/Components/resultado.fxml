@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="modal" layoutX="382.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="350.0" stylesheets="@../Styles/estilo1.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Components.ControladorResultado">
+   <children>
+      <ImageView fx:id="iconNotify" fitHeight="70.0" fitWidth="70.0" layoutX="143.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Check.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelModal" alignment="CENTER" contentDisplay="CENTER" layoutY="117.0" prefHeight="19.0" prefWidth="350.0" text="Mensaje encriptado correctamente" wrapText="true">
+         <font>
+            <Font name="Colfax-Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="118.0" layoutX="94.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/LlaveIzquierda.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="118.0" layoutX="236.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../Images/LlaveIzquierda.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="panel_mat" layoutX="122.0" layoutY="185.0" prefHeight="102.0" prefWidth="108.0" />
+      <TextField fx:id="textModal" alignment="CENTER" editable="false" layoutX="73.0" layoutY="360.0" prefHeight="35.0" prefWidth="208.0" />
+      <Label fx:id="labelClave" layoutX="159.0" layoutY="301.0" text="Clave" textFill="BLACK" />
+      <Label fx:id="labelMensaje" layoutX="154.0" layoutY="402.0" text="Mensaje" textFill="BLACK" />
+      <Button fx:id="cerrarModal" alignment="CENTER" layoutX="135.0" layoutY="449.0" mnemonicParsing="false" onAction="#cerrarModalAction" prefHeight="30.0" prefWidth="70.0" text="Cerrar" textFill="WHITE">
+         <font>
+            <Font name="Colfax-Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

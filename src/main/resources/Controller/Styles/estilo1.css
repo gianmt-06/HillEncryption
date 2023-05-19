@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Colfax-BoldItalic";
+    src: url("../Fonts/Colfax-BoldItalic.otf");
+}
+
+@font-face {
+    font-family: "Colfax-Medium";
+    src: url("../Fonts/Colfax-Medium.otf");
+}
+
+@font-face {
+    font-family: "Colfax-Bold";
+    src: url("../Fonts/Colfax-Bold.otf");
+}
+
+#matriz_Text {
+    -fx-background-color:  #0C0D0D;
+    -fx-text-fill: rgba(255, 255, 255, 1);
+    -fx-font-family: "Colfax-Bold";
+    -fx-font-size: 14px;
+    -fx-border-radius: 0;
+    -fx-opacity: 0.4;
+    -fx-focus-color: transparent;
+    -fx-text-alignment: center;
+}
+
+#mesaje {
+    -fx-background-color: #141516;
+    -fx-border-radius: 2;
+    -fx-font-family: "Colfax-Medium";
+    -fx-font-size: 14px;
+    -fx-focus-color: transparent;
+    -fx-text-fill: rgba(255, 255, 255, 1);
+    -fx-text-alignment: center;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: white;
+}
+
+#mesaje:focused{
+-fx-background-color: transparent;
+}
+
+#titulo {
+    -fx-font-family: "Colfax-Bold";
+    -fx-font-size: 20px;
+}
+
+#eliminar{
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+     -fx-focus-traversable: false;
+    -fx-background-color: #a91409;
+    -fx-font-family : "Colfax-Medium";
+    -fx-font-size: 13px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 11, 0, 2, 2);
+    -fx-box-sizing: border-box;
+}
+
+#eliminar:hover {
+    -fx-background-color: #98100e;
+    -fx-font-family : "Colfax-Medium";
+    -fx-font-size: 12px;
+    -fx-effect: none;
+}
+
+#anadir{
+    -fx-pref-width: 100px;
+        -fx-pref-height: 40px;
+         -fx-focus-traversable: false;
+        -fx-background-color: #00a042;
+        -fx-font-family : "Colfax-Medium";
+        -fx-font-size: 13px;
+        -fx-padding: 10px 20px; /* Agrega un poco de padding para visualizar la sombra */
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 11, 0, 2, 2);
+        -fx-box-sizing: border-box;
+
+}
+
+#anadir:hover{
+    -fx-background-color: #0A803B;
+    -fx-font-family : "Colfax-Medium";
+    -fx-font-size: 12px;
+    -fx-effect: none;
+}
+
+#limpiar{
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-focus-traversable: false;
+    -fx-background-color: #0072a6;
+    -fx-font-family : "Colfax-Medium";
+    -fx-font-size: 13px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 11, 0, 2, 2);
+    -fx-box-sizing: border-box;
+}
+
+#limpiar:hover{
+    -fx-background-color: #025f97;
+    -fx-font-family : "Colfax-Medium";
+    -fx-font-size: 12px;
+    -fx-effect: none;
+}
+
+#encriptar{
+    -fx-font-family : "Colfax-Bold";
+    -fx-font-size: 15px;
+}
+
+#desencriptar{
+    -fx-font-family : "Colfax-Bold";
+    -fx-font-size: 15px;
+}
+
+#labelClave {
+-fx-font-family: "Colfax-Medium";
+}
+
+#labelMensaje {
+-fx-font-family: "Colfax-Medium";
+}
+
+//VENTANA MODAL
+#modal {
+ -fx-background-radius: 10px;
+ -fx-background-color: #ffffff;
+}
+
+#labelModal {
+    -fx-font-family : "Colfax-BoldItalic";
+    -fx-font-size: 15px;
+    -fx-text-fill: #000000;
+}
+
+#textModal {
+    -fx-font-family : "Colfax-Medium";
+    -fx-background-color: #CCCCCC;
+    -fx-border-color: black;
+    -fx-border-width: 0 0 2 0;
+}
+
+#cerrarModal {
+    -fx-pref-width: 80px;
+    -fx-pref-height: 35px;
+    -fx-focus-traversable: false;
+    -fx-background-color:  #a91409;
+    -fx-font-family : "Colfax-Medium";
+    -fx-font-size: 13px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 11, 0, 2, 2);
+    -fx-box-sizing: border-box;
+}
+
+#cerrarModal:hover {
+    -fx-background-color: #98100e;
+    -fx-font-family : "Colfax-Medium";
+    -fx-font-size: 12px;
+    -fx-effect: none;
+}
+
+#res_Matriz {
+         -fx-border-color: #cccccc;
+         -fx-text-fill: #000000;
+         -fx-font-family: "Colfax-Bold";
+         -fx-font-size: 14px;
+         -fx-border-radius: 0;
+         -fx-focus-color: transparent;
+         -fx-text-alignment: center;
+}
+
+#decoracion_one {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #01ecfa, #a50382);
+    -fx-background-radius: 30px;
+}
+
+#decoracion_two {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #E5CA00, #FF5023);
+    -fx-background-radius: 30px;
+}
+
+#encriptar {
+    -fx-background-color: #17181A;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 2px;
+    -fx-border-width: 1.5px;
+}
+
+#encriptar:hover {
+    -fx-effect: dropshadow(gaussian, rgba(104, 0, 213, 0.8), 11, 0, 0.2, 2);
+}
+
+#desencriptar {
+    -fx-background-color: #17181A;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 2px;
+    -fx-border-width: 1.5px;
+}
+
+#desencriptar:hover {
+    -fx-effect: dropshadow(gaussian, rgba(104, 0, 213, 0.8), 11, 0, 0.2, 2);
+}
+
+//ESTILOS RESULTADO
+#panel_mat {
+    -fx-background-color: transparent;
+}
+
+#res_Matriz{
+ -fx-background-color: transparent;
+ -fx-border-color: transparent;
+ -fx-border-width: 0;
+}
+
+#res_Matriz:focused {
+    -fx-focus-color: transparent;
+}
+
+#.matrizClave {
+     -fx-border-color: transparent;
+ }
+
+#error {
+ -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 11, 0, 2, 2);
+}
+
+

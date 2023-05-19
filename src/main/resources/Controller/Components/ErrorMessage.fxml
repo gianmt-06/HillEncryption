@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="error" prefHeight="82.0" layoutY="50.0" prefWidth="257.0" style="-fx-background-color: #cccccc;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Components.ErrorMessage">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../Images/ErrorIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="15.0" text="ERROR:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="75.0" layoutY="43.0" prefHeight="17.0" prefWidth="164.0" text="Operación no válida" />
+   </children>
+</AnchorPane>

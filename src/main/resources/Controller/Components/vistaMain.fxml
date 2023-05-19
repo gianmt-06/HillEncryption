@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="padre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #17181A;" stylesheets="@../Styles/estilo1.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Components.Controlador">
+   <children>
+      <TextField fx:id="mesaje" alignment="CENTER" focusTraversable="false" layoutX="321.0" layoutY="465.0" prefHeight="40.0" prefWidth="468.0">
+         <font>
+            <Font name="Colfax-Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="encriptar" layoutX="373.0" layoutY="576.0" mnemonicParsing="false" onAction="#encriptarButton" prefHeight="40.0" prefWidth="156.0" text="ENCRIPTAR" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button id="desencriptar" layoutX="586.0" layoutY="576.0" mnemonicParsing="false" onAction="#desencriptarButton" prefHeight="40.0" prefWidth="156.0" text="DESENCRIPTAR" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelClave" layoutX="541.0" layoutY="311.0" text="CLAVE" textFill="WHITE">
+         <font>
+            <Font name="Colfax-Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="titulo" alignment="CENTER" layoutX="4.0" layoutY="57.0" prefHeight="24.0" prefWidth="1100.0" text="CIFRADO DE HILL" textFill="WHITE">
+         <font>
+            <Font name="Colfax-BoldItalic" size="15.0" />
+         </font>
+      </Label>
+      <GridPane alignment="CENTER" layoutX="373.0" layoutY="377.0" prefHeight="46.0" prefWidth="369.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="limpiar" onAction="#clearMatriz" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Limpiar" textFill="WHITE">
+               <font>
+                  <Font name="Colfax-Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="eliminar" mnemonicParsing="false" onAction="#deleteRowsColumns" text="Eliminar" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font></Button>
+            <Button id="anadir" mnemonicParsing="false" onAction="#updateMatriz" prefHeight="30.0" prefWidth="75.0" text="Añadir" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+      <Pane fx:id="paneMatriz" layoutX="475.0" layoutY="131.0" prefHeight="170.0" prefWidth="170.0" />
+      <ImageView fx:id="llaveIzquierda" fitHeight="170.0" fitWidth="24.0" layoutX="413.0" layoutY="131.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/LlaveIzquierda.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="llaveDerecha" fitHeight="170.0" fitWidth="24.0" layoutX="678.0" layoutY="131.0" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../Images/LlaveIzquierda.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelMensaje" layoutX="528.0" layoutY="522.0" text="MENSAJE" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Pane fx:id="decoracion_one" layoutX="-9.0" layoutY="-86.0" prefHeight="200.0" prefWidth="320.0" rotate="45.0" />
+      <Pane fx:id="decoracion_two" layoutX="-93.0" layoutY="-88.0" prefHeight="204.0" prefWidth="337.0" rotate="45.0" />
+   </children>
+</AnchorPane>
